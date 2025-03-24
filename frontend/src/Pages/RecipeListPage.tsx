@@ -43,7 +43,7 @@ const RecipeListPage = () => {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div style={{ padding: '20px', backgroundColor: '#f0f0f0',  height:'100%' }}>
       <h1>{title()}</h1>
       {error ? (
         <p style={{ color: 'red' }}>{error}</p>

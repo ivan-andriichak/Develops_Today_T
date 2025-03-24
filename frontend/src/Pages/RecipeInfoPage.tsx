@@ -41,12 +41,12 @@ const RecipeInfoPage = () => {
     .filter((item) => item.ingredient);
 
   return (
-    <div style={{ display: 'flex', padding: '20px' }}>
-      <div style={{ flex: 1 }}>
+    <div style={{ display: 'flex', padding: '20px', backgroundColor: '#f0f0f0',  height:'100vh' }}>
+      <div style={{ flex: 1 , border: '1px solid #ccc', padding: '20px', borderRadius: '5px' }}>
         <img
           src={recipe.strMealThumb}
           alt={recipe.strMeal}
-          style={{ maxWidth: '300px', float: 'left', marginRight: '20px' }}
+          style={{ maxWidth: '300px', float: 'left', marginRight: '20px', borderRadius: '5px', boxShadow: '10px 10px 10px grey' }}
         />
         <h1 style={{ textAlign: 'center' }}>{recipe.strMeal}</h1>
         <p

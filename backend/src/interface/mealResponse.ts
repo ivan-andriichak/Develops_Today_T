@@ -1,4 +1,4 @@
-import { Recipe } from './recipes.types';
+import { Recipe } from "./recipes.types";
 
 export interface MealsResponse {
   meals: Recipe[] | null;
