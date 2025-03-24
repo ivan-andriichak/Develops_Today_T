@@ -41,8 +41,8 @@ const RecipeInfoPage = () => {
     .filter((item) => item.ingredient);
 
   return (
-    <div style={{ display: 'flex', padding: '20px', backgroundColor: '#f0f0f0',  height:'100vh' }}>
-      <div style={{ flex: 1 , border: '1px solid #ccc', padding: '20px', borderRadius: '5px' }}>
+    <div style={{ display: 'flex', padding: '20px' }}>
+      <div style={{ flex: 1 , padding: '20px', borderRadius: '5px' }}>
         <img
           src={recipe.strMealThumb}
           alt={recipe.strMeal}
@@ -58,17 +58,19 @@ const RecipeInfoPage = () => {
         <h3>Instructions</h3>
         <p>{recipe.strInstructions}</p>
         <h3>Ingredients</h3>
-        <ul>
-          {ingredients.map((item, index) => (
-            <li
-              key={index}
-              onClick={() => navigate(`/?ingredient=${item.ingredient}`)}
-              style={{ cursor: 'pointer', color: 'blue' }}
-            >
-              {item.measure} {item.ingredient}
-            </li>
-          ))}
-        </ul>
+        <div style={{display: 'flex', flexDirection: 'row'}}>
+          <ul>
+            {ingredients.map((item, index) => (
+              <li
+                key={index}
+                onClick={() => navigate(`/?ingredient=${item.ingredient}`)}
+                style={{ cursor: 'pointer', color: 'blue' }}
+              >
+                {item.measure} {item.ingredient}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
       <div style={{ width: '300px', marginLeft: '20px' }}>
         <h3>More {recipe.strCategory} Recipes</h3>
