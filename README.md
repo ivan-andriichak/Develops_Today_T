@@ -39,12 +39,12 @@ The backend provides RESTful endpoints with filtering capabilities, while the fr
 ## Usage
 
 ### Backend
-- The backend server will run on `http://localhost:3005`.
+- The backend server will run on `http://localhost:3000`.
 - Use Postman or curl to test endpoints:
     ```bash
-    curl http://localhost:3005/recipes
-    curl http://localhost:3005/recipes?category=Seafood
-    curl http://localhost:3005/recipes/53086
+    curl http://localhost:3000/recipes
+    curl http://localhost:3000/recipes?category=Seafood
+    curl http://localhost:3000/recipes/53086
     ```
 - Check Swagger UI at `http://localhost:3005/docs` for interactive testing.
 
